@@ -21,10 +21,10 @@ void loop()
   Serial.println(lembab);
   delay(1000);
 
-  if (suhu > 30.00){
-    digitalWrite(RELAY,LOW);  // nyalain relay
+  if (suhu < 30.00){
+    digitalWrite(RELAY,LOW);  // heater nyala
    }
-   else if(suhu <= 30.00){
-    digitalWrite(RELAY,HIGH); // matiin relay
+   else if(suhu >= 30.00){
+    digitalWrite(RELAY,HIGH); // heater mati
    }
 }
