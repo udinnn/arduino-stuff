@@ -34,10 +34,10 @@ void loop() {
   lcd.print("C");
 
   if (tempC >= 30.00){
-    digitalWrite(RELAY,LOW);  // relay nyala
+    digitalWrite(RELAY,LOW);  // kipas nyala
    }
   else if(tempC < 30.00){
-    digitalWrite(RELAY,HIGH); // relay mati
+    digitalWrite(RELAY,HIGH); // kipas mati
    }
 
   delay(1000); 
